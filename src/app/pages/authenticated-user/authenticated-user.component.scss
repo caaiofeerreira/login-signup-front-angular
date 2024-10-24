@@ -1,0 +1,38 @@
+@import "../../../styles/style.scss";
+
+.container-auth {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 50px;
+
+  & p {
+    font-size: 2rem;
+    font-weight: 600;
+  }
+
+  & button {
+    font-size: 1rem;
+    font-weight: 500;
+    background-color: $bg-color;
+    color: $primary-color;
+    border-radius: 5px;
+    border: 1px solid transparent;
+    padding: 5px 20px;
+    cursor: pointer;
+    transition: .3s;
+  }
+
+  & button:hover {
+    background-color: $primary-color;
+    color: $bg-color;
+    border: 1px solid $bg-color;
+    transition: .3s;
+  }
+
+  @media (max-width: 500px) {
+    p {
+      font-size: 1.25rem;
+    }
+  }
+}

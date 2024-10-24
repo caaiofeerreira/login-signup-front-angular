@@ -1,0 +1,30 @@
+<app-default-login-layout
+  title="Login"
+  primaryBtnText="Login"
+  secondaryBtnText="Signup"
+  (submit)="submit()"
+  (navigate)="navigate()"
+  [disabledPrimaryBtn]="!loginForm.valid"
+
+>
+  <form [formGroup]="loginForm">
+    <app-primary-input
+    formControlName="email" 
+    inputName="email" 
+    type="email" 
+    label="Email" 
+    >
+    </app-primary-input>
+
+    <app-primary-input
+    formControlName="password" 
+    inputName="password" 
+    type="password" 
+    label="Password"
+    >
+    </app-primary-input>
+    <div>
+      <span>forgot password?</span>
+    </div>
+  </form>
+</app-default-login-layout>

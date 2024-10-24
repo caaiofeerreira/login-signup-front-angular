@@ -1,0 +1,28 @@
+@import "../../../styles/style.scss";
+
+.input-wrapper{
+  display: flex;
+  flex-direction: column;
+  color: $text-color;
+  font-size: 1rem;
+  text-align: start;
+
+  label {
+    font-size: .9rem;
+    color: $text-color;
+  }
+
+  .input-content {
+    display: flex;
+    width: 100%;
+    border-radius: 5px;
+
+    input {
+      border: none;
+      border-radius: 5px;
+      background-color: $secondary-color;
+      padding: 10px;
+      width: 100%;
+    }
+  }
+}
